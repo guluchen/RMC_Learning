@@ -1,0 +1,110 @@
+\documentclass{llncs}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{alltt}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xspace}
+\usepackage{proof}
+\usepackage{multirow}
+\pagestyle{plain}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{stmaryrd}
+\usepackage{wrapfig}
+\usepackage{framed}
+%\usepackage{txfonts}
+
+%====tikz====
+\usepackage{tikz}
+\usetikzlibrary{arrows,positioning,calc}
+\usepackage{adjustbox}
+\usepackage[T1]{fontenc}
+
+\usetikzlibrary{automata,positioning}
+\tikzset{initial text={}}
+\usetikzlibrary{decorations.markings}
+
+
+
+%\usepackage{a4wide}
+\input{macros}
+
+\usepackage{xcolor}
+\definecolor{linkcolor}{rgb}{0.65,0,0}
+\definecolor{citecolor}{rgb}{0,0.65,0}
+\definecolor{urlcolor}{rgb}{0,0,0.65}
+\usepackage[colorlinks=true, linkcolor=linkcolor, urlcolor=urlcolor, citecolor=citecolor]{hyperref}
+
+\titlerunning{Efficient Regular Model Checking using Automata Learning}
+\title{Efficient Regular Model Checking using Automata Learning}
+
+\author{
+Yu-Fang Chen\inst{1}
+\and
+Chih-Duo Hong\inst{1,2}
+\and
+Anthony W. Lin\inst{2}
+\and\\
+Philipp R\"ummer\inst{3}
+}
+
+\institute
+{
+Academia Sinica
+\and
+Oxford University
+\and
+Uppsala Univeristy
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+ 
+\end{abstract}
+
+\section{Introduction}
+\label{section:introduction}
+\input{introduction}
+
+\section{Preliminaries}
+\label{section:preliminaries}
+\input{preliminaries}
+
+\section{Overview}
+\label{section:overview}
+\input{overview}
+
+\section{Inferring an Inductive Invariant for Regular Model Checking}
+\label{section:inferring}
+\input{inferring}
+
+\section{Optimizations}
+\label{section:optimizations}
+\input{optimizations}
+
+
+\section{Evaluation}
+\label{section:evaluation}
+\input{evaluation}
+
+\section{Conclusion}
+\label{section:conclusion}
+\input{conclusion}
+
+
+\bibliographystyle{splncs-sorted}
+\bibliography{refs}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% eval: (TeX-PDF-mode 1)
+%%% TeX-master: "draft.tex"
+%%% End: 
